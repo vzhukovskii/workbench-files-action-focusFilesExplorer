@@ -14,7 +14,7 @@ export function start(context: theia.PluginContext): void {
     theia.commands.registerCommand({
         id: 'plugin.workbench.files.action.focusFilesExplorer',
         label: 'Plugin: Focus on Files Explorer'
-    }, () => theia.commands.executeCommand('workbench.files.action.focusFilesExplorer'));
+    }, () => theia.commands.executeCommand('workbench.view.explorer'));
 }
 
 export function stop(): void {
